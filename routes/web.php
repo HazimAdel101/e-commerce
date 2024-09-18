@@ -22,4 +22,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
 
 });
 
+Route::prefix('admin')->group(function () {
+    Route::resource('users', UserController::class);
+});
+
 require __DIR__.'/auth.php';
