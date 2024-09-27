@@ -57,3 +57,8 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', [AuthenticatedSessionController::class, 'destroy'])
                 ->name('logout');
 });
+
+
+Route::get('/{path?}', function () {
+    return view('404');
+})->where('path', '.*');
