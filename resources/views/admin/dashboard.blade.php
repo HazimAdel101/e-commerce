@@ -54,6 +54,10 @@
             <!-- partial -->
 
             @yield('admin')
+            @yield('admin_users_index')
+            @yield('admin_users_create')
+            @yield('admin_users_show')
+
 
             <!-- partial:partials/_footer.html -->
             @include('admin.body.footer')
