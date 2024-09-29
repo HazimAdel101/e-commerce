@@ -18,7 +18,7 @@ class UserRepository implements UserRepositoryInterface
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
             $data->file('photo')->move(public_path('photos/users'), $fileNameToStore);
         }
-
+    
         // Create record
         $user = new User();
         $user->photo = $fileNameToStore;
@@ -27,7 +27,11 @@ class UserRepository implements UserRepositoryInterface
         $user->phone = $data->phone;
         $user->password = Hash::make($data->password);
         $user->save();
+    
+        // Return the created user instance
+        return $user;
     }
+    
 
     public function update($id, $data)
     {
