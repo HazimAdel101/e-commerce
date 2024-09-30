@@ -57,6 +57,9 @@
             @yield('admin_users_index')
             @yield('admin_users_create')
             @yield('admin_users_show')
+            @yield('admin_products_index')
+            @yield('admin_products_create')
+            @yield('admin_products_show')
 
 
             <!-- partial:partials/_footer.html -->

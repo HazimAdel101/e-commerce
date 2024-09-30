@@ -21,14 +21,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#categories" role="button"
-                    aria-expanded="false" aria-controls="categories">
-                    <i class="link-icon" data-feather="categories"></i>
-                    <span class="link-title">Categories</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="collapse" href="#products" role="button"
+                <a class="nav-link" data-bs-toggle="collapse" href="{{route('admin.products.index')}}" role="button"
                     aria-expanded="false" aria-controls="products">
                     <i class="link-icon" data-feather="products"></i>
                     <span class="link-title">Products</span>
