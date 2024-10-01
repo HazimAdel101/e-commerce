@@ -5,10 +5,10 @@
 
         <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
             <div>
-                <h4 class="mb-3 mb-md-0">Users Management</h4>
+                <h4 class="mb-3 mb-md-0">Product Management</h4>
             </div>
             <div class="d-flex align-items-center flex-wrap text-nowrap">
-                <a type="button" href="{{ route('admin.users.create') }}" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
+                <a type="button" href="{{ route('admin.products.create') }}" class="btn btn-primary btn-icon-text mb-2 mb-md-0">
                     New
                 </a>
             </div>
@@ -17,60 +17,31 @@
         <table id="dataTableExample" class="table">
             <thead>
                 <tr>
-                    <th>Photo</th>
+                    <th>photo</th>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Status</th>
-                    <th>Age</th>
+                    <th>Price</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                @foreach ($users as $user)
+                @foreach ($products as $product)
                     <tr>
-                        <!-- Photo Column: Show a thumbnail or '----' if photo does not exist -->
+                        <!-- photo Column: Show a thumbnail or '----' if photo does not exist -->
                         <td>
-                            @if ($user->photo && $user->photo != 'noimage.jpg')
-                                <img src="{{ asset('photos/users/' . $user->photo) }}" alt="{{ $user->name }}"
+                            @if ($product->photo && $product->photo != 'nophoto.jpg')
+                                <img src="{{ asset('photos/products/' . $product->photo) }}" alt="{{ $product->name }}"
                                     width="100">
                             @else
-                                <img src="{{ asset('photos/users/noimage.jpg') }}" alt="Default Image" width="100">
+                                <img src="{{ asset('photos/products/nophoto.jpg') }}" alt="Default photo" width="100">
                             @endif
                 </td>
-
-                <!-- Name: Show '----' if name is empty -->
-                <td>{{ $user->name ?? '----' }}</td>
-
-                <!-- Email: Show '----' if email is empty -->
-                <td>{{ $user->email ?? '----' }}</td>
-
-                <!-- Phone: Show '----' if phone is empty -->
-                <td>{{ $user->phone ?? '----' }}</td>
-
-                <!-- Address: Show '----' if address is empty -->
-                <td>{{ $user->address ?? '----' }}</td>
-
-                <!-- Status: Show '----' if status is empty, otherwise show a badge -->
-                <td>
-                    @if ($user->status)
-                        <span class="badge {{ $user->status == 'active' ? 'bg-success' : 'bg-secondary' }}">
-                            {{ ucfirst($user->status) }}
-                        </span>
-                    @else
-                        ----
-                    @endif
-                </td>
-
-                <!-- Age: Show '----' if age is empty -->
-                <td>{{ $user->age ?? '----' }}</td>
-
+                <td>{{ $product->name ?? '----' }}</td>
+                <td>{{ $product->price ?? '----' }}</td>
                 <!-- Actions: Edit and Delete buttons -->
                 <td>
-                    <a href="{{ route('admin.users.show', $user->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                    <a href="{{ route('admin.products.show', $product->id) }}" class="btn btn-primary btn-sm">Edit</a>
 
-                    <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST"
+                    <form action="{{ route('admin.products.destroy', $product->id) }}" method="POST"
                         style="display:inline-block;">
                         @csrf
                         @method('DELETE')

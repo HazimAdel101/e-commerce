@@ -31,7 +31,7 @@
                 <div class="col-sm-6">
                     <div class="mb-3">
                         <label class="form-label">Photo</label>
-                        <input type="file" name="photo" class="form-control" accept="image/*" required>
+                        <input type="file" name="photo" class="form-control" accept="photo/*" required>
                     </div>
                 </div><!-- Col -->
                 <div class="col-sm-6">

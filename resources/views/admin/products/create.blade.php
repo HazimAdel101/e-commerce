@@ -30,8 +30,8 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="mb-3">
-                        <label class="form-label">Photo</label>
-                        <input type="file" name="image" class="form-control" accept="image/*" required>
+                        <label class="form-label">photo</label>
+                        <input type="file" name="photo" class="form-control" accept="photo/*" required>
                     </div>
                 </div><!-- Col -->
                 <div class="col-sm-6">
@@ -45,23 +45,9 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="mb-3">
-                        <label class="form-label">Description</label>
-                        <input type="email" name="description" class="form-control" placeholder="Enter description" required>
-                    </div>
-                </div><!-- Col -->
-                <div class="col-sm-6">
-                    <div class="mb-3">
                         <label class="form-label">price</label>
                         <input type="number" name="price" class="form-control" placeholder="Enter phone number" required
                             minlength="10" maxlength="15">
-                    </div>
-                </div><!-- Col -->
-            </div><!-- Row -->
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="mb-3">
-                        <label class="form-label">stock</label>
-                        <input type="number" name="stock" class="form-control" placeholder="Enter the stock number" required>
                     </div>
                 </div><!-- Col -->
             </div><!-- Row -->

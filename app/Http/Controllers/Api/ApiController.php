@@ -24,7 +24,7 @@ class ApiController extends Controller
 
         try {
             $validate_user = Validator::make($request->all(), [
-                'photo' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
+                'photo' => 'photo|mimes:jpeg,png,jpg,gif|max:2048',
                 'name' => 'required|string|min:3|max:100',
                 'email' => 'required|email|unique:users,email',
                 'password' => 'required|string|min:6',

@@ -32,7 +32,7 @@
 	<link rel="stylesheet" href="../../../assets/css/demo2/style.css">
   <!-- End layout styles -->
 
-  <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+  <link rel="shortcut icon" href="../../../assets/photos/favicon.png" />
 </head>
 <body>
 	<div class="main-wrapper">
@@ -41,7 +41,7 @@
 
 				<div class="row w-100 mx-0 auth-page">
 					<div class="col-md-8 col-xl-6 mx-auto d-flex flex-column align-items-center">
-						<img src="../../../assets/images/others/404.svg" class="img-fluid mb-2" alt="404">
+						<img src="../../../assets/photos/others/404.svg" class="img-fluid mb-2" alt="404">
 						<h1 class="fw-bolder mb-22 mt-2 tx-80 text-muted">404</h1>
 						<h4 class="mb-2">Page Not Found</h4>
 						<h6 class="text-muted mb-3 text-center">Oopps!! The page you were looking for doesn't exist.</h6>

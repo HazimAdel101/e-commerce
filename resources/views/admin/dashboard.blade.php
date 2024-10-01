@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="{{ asset('../assets/css/demo2/style.css') }}">
     <!-- End layout styles -->
 
-    <link rel="shortcut icon" href="{{ asset('../assets/images/favicon.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('../assets/photos/favicon.png') }}" />
 </head>
 
 <body>

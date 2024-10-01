@@ -9,8 +9,8 @@ class UserRepository implements UserRepositoryInterface
 {
     public function store($data)
     {
-        // Handle Image Upload
-        $fileNameToStore = 'noimage.jpg';
+        // Handle photo Upload
+        $fileNameToStore = 'nophoto.jpg';
         if ($data->hasFile('photo')) {
             $fileWithExt = $data->file('photo')->getClientOriginalName();
             $filename = pathinfo($fileWithExt, PATHINFO_FILENAME);
@@ -38,15 +38,15 @@ class UserRepository implements UserRepositoryInterface
         // Find the user by ID
         $user = User::findOrFail($id);
 
-        // Handle Image Upload
+        // Handle photo Upload
         if ($data->hasFile('photo')) {
             $fileWithExt = $data->file('photo')->getClientOriginalName();
             $filename = pathinfo($fileWithExt, PATHINFO_FILENAME);
             $extension = $data->file('photo')->getClientOriginalExtension();
             $fileNameToStore = $filename . '_' . time() . '.' . $extension;
 
-            // Delete the old photo if it's not 'noimage.jpg'
-            if ($user->photo != 'noimage.jpg') {
+            // Delete the old photo if it's not 'nophoto.jpg'
+            if ($user->photo != 'nophoto.jpg') {
                 $oldPhotoPath = public_path('photos/users/' . $user->photo);
                 if (file_exists($oldPhotoPath)) {
                     unlink($oldPhotoPath); // Delete the old file
@@ -79,8 +79,8 @@ class UserRepository implements UserRepositoryInterface
         // Find the user by ID
         $user = User::findOrFail($id);
 
-        // Check if the user has a photo that is not the default 'noimage.jpg'
-        if ($user->photo && $user->photo != 'noimage.jpg') {
+        // Check if the user has a photo that is not the default 'nophoto.jpg'
+        if ($user->photo && $user->photo != 'nophoto.jpg') {
             // Define the photo path
             $photoPath = public_path('photos/users/' . $user->photo);
 

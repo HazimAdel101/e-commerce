@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Ecommerce</title>
+    <title>Awesome Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
@@ -19,7 +19,7 @@
         <div class="container flex items-center justify-between">
             <!-- logo -->
             <a href="#" class="block w-32">
-                <img src="{{ asset('user/dist/images/logo.svg') }}" alt="logo" class="w-full">
+                <img src="{{ asset('user/dist/photos/logo.svg') }}" alt="logo" class="w-full">
             </a>
             <!-- logo end -->
 
@@ -86,37 +86,37 @@
                         class="absolute left-0 top-full w-full bg-white shadow-md py-3 invisible opacity-0 group-hover:opacity-100 group-hover:visible transition duration-300 z-50 divide-y divide-gray-300 divide-dashed">
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="{{ asset('user/dist/images/icons/bed.svg') }}" class="w-5 h-5 object-contain">
+                            <img src="{{ asset('user/dist/photos/icons/bed.svg') }}" class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Bedroom</span>
                         </a>
                         <!-- single category end -->
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="images/icons/sofa.svg" class="w-5 h-5 object-contain">
+                            <img src="photos/icons/sofa.svg" class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Sofa</span>
                         </a>
                         <!-- single category end -->
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="{{ asset('user/dist/images/icons/office.svg') }}" class="w-5 h-5 object-contain">
+                            <img src="{{ asset('user/dist/photos/icons/office.svg') }}" class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Office</span>
                         </a>
                         <!-- single category end -->
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="{{ asset('user/dist/images/icons/terrace.svg') }}" class="w-5 h-5 object-contain">
+                            <img src="{{ asset('user/dist/photos/icons/terrace.svg') }}" class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Outdoor</span>
                         </a>
                         <!-- single category end -->
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="{{ asset('user/dist/images/icons/bed-2.svg') }}" class="w-5 h-5 object-contain">
+                            <img src="{{ asset('user/dist/photos/icons/bed-2.svg') }}" class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Mattress</span>
                         </a>
                         <!-- single category end -->
                         <!-- single category -->
                         <a href="#" class="px-6 py-3 flex items-center hover:bg-gray-100 transition">
-                            <img src="{{ asset('user/dist/images/icons/restaurant.svg') }}"
+                            <img src="{{ asset('user/dist/photos/icons/restaurant.svg') }}"
                                 class="w-5 h-5 object-contain">
                             <span class="ml-6 text-gray-600 text-sm">Sofa</span>
                         </a>
@@ -224,7 +224,7 @@
     <!-- mobile sidebar menu end -->
 
     <!-- banner -->
-    <div class="bg-cover bg-no-repeat bg-center py-36 relative" style="background-image: url('images/banner-bg.jpg')">
+    <div class="bg-cover bg-no-repeat bg-center py-36 relative" style="background-photo: url('photos/banner-bg.jpg')">
         <div class="container">
             <!-- banner content -->
             <h1 class="xl:text-6xl md:text-5xl text-4xl text-gray-800 font-medium mb-4">
@@ -255,7 +255,7 @@
             <!-- single feature -->
             <div
                 class="border-primary border rounded-sm px-8 lg:px-3 lg:py-6 py-4 flex justify-center items-center gap-5">
-                <img src="{{ asset('user/dist/images/icons/delivery-van.svg') }}"
+                <img src="{{ asset('user/dist/photos/icons/delivery-van.svg') }}"
                     class="lg:w-12 w-10 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">free shipping</h4>
@@ -266,7 +266,7 @@
             <!-- single feature -->
             <div
                 class="border-primary border rounded-sm px-8 lg:px-3 lg:py-6 py-4 flex justify-center items-center gap-5">
-                <img src="{{ asset('user/dist/images/icons/money-back.svg') }}"
+                <img src="{{ asset('user/dist/photos/icons/money-back.svg') }}"
                     class="lg:w-12 w-10 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">Money returns</h4>
@@ -277,7 +277,7 @@
             <!-- single feature -->
             <div
                 class="border-primary border rounded-sm px-8 lg:px-3 lg:py-6 py-4 flex justify-center items-center gap-5">
-                <img src="{{ asset('user/dist/images/icons/service-hours.svg') }}"
+                <img src="{{ asset('user/dist/photos/icons/service-hours.svg') }}"
                     class="lg:w-12 w-10 h-12 object-contain">
                 <div>
                     <h4 class="font-medium capitalize text-lg">24/7 Support</h4>
@@ -296,7 +296,7 @@
         <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-3">
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-1.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-1.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                     font-roboto font-medium tracking-wide transition">
@@ -306,7 +306,7 @@
             <!-- single category end -->
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-5.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-5.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                     font-roboto font-medium tracking-wide transition">
@@ -316,7 +316,7 @@
             <!-- single category end -->
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-3.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-3.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                     font-roboto font-medium tracking-wide transition">
@@ -326,7 +326,7 @@
             <!-- single category end -->
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-4.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-4.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                     font-roboto font-medium tracking-wide transition">
@@ -336,7 +336,7 @@
             <!-- single category end -->
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-2.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-2.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                     font-roboto font-medium tracking-wide transition">
@@ -346,7 +346,7 @@
             <!-- single category end -->
             <!-- single category -->
             <div class="relative group rounded-sm overflow-hidden">
-                <img src="{{ asset('user/dist/images/category/category-6.jpg') }}" class="w-full">
+                <img src="{{ asset('user/dist/photos/category/category-6.jpg') }}" class="w-full">
                 <a href="#"
                     class="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-50 flex items-center justify-center text-xl text-white 
                         font-roboto font-medium tracking-wide transition">
@@ -365,9 +365,9 @@
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product9.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product9.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -380,7 +380,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -414,9 +414,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product1.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product1.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -429,7 +429,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -463,9 +463,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product8.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product8.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -478,7 +478,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -512,9 +512,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product12.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product12.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -527,7 +527,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -567,7 +567,7 @@
     <!-- ad section -->
     <div class="container pb-16">
         <a href="#">
-            <img src="{{ asset('user/dist/images/offer.jpg') }}" class="w-full">
+            <img src="{{ asset('user/dist/photos/offer.jpg') }}" class="w-full">
         </a>
     </div>
     <!-- ad section end -->
@@ -579,9 +579,9 @@
         <div class="grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product2.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product2.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -594,7 +594,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -628,9 +628,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product3.jpg ') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product3.jpg ') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -643,7 +643,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -677,9 +677,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product4.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product4.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -692,7 +692,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -726,9 +726,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product9.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product9.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -741,7 +741,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -775,9 +775,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="{{ asset('user/dist/images/products/product1.jpg') }}" class="w-full">
+                    <img src="{{ asset('user/dist/photos/products/product1.jpg') }}" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -790,7 +790,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -824,9 +824,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="images/products/product8.jpg" class="w-full">
+                    <img src="photos/products/product8.jpg" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -839,7 +839,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -873,9 +873,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="images/products/product10.jpg" class="w-full">
+                    <img src="photos/products/product10.jpg" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -888,7 +888,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -922,9 +922,9 @@
             <!-- single product end -->
             <!-- single product -->
             <div class="group rounded bg-white shadow overflow-hidden">
-                <!-- product image -->
+                <!-- product photo -->
                 <div class="relative">
-                    <img src="images/products/product11.jpg" class="w-full">
+                    <img src="photos/products/product11.jpg" class="w-full">
                     <div
                         class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition">
                         <a href="view.html"
@@ -937,7 +937,7 @@
                         </a>
                     </div>
                 </div>
-                <!-- product image end -->
+                <!-- product photo end -->
                 <!-- product content -->
                 <div class="pt-4 pb-3 px-4">
                     <a href="view.html">
@@ -980,7 +980,7 @@
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">
                 <!-- footer text -->
                 <div class="space-y-8 xl:col-span-1">
-                    <img class="w-30" src="images/logo.svg" alt="Company name">
+                    <img class="w-30" src="photos/logo.svg" alt="Company name">
                     <p class="text-gray-500 text-base">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio facere rem
                     </p>
@@ -1094,7 +1094,7 @@
         <div class="container flex items-center justify-between">
             <p class="text-white">© RAFCART - All Rights Reserved</p>
             <div>
-                <img src="images/methods.png" class="h-5">
+                <img src="photos/methods.png" class="h-5">
             </div>
         </div>
     </div>

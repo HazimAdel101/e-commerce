@@ -33,10 +33,10 @@
                 <div class="col-sm-6">
                     <div class="mb-3">
                         <label class="form-label">Photo</label>
-                        @if($user->photo && $user->photo != 'noimage.jpg')
+                        @if($user->photo && $user->photo != 'nophoto.jpg')
                             <img src="{{ asset('photos/users/' . $user->photo) }}" alt="User Photo" width="100">
                         @endif
-                        <input type="file" name="photo" class="form-control" accept="image/*">
+                        <input type="file" name="photo" class="form-control" accept="photo/*">
                     </div>
                 </div><!-- Col -->
                 <div class="col-sm-6">

@@ -39,7 +39,7 @@ class UserController extends Controller
     public function store(Request $request)
 {
     $request->validate([
-        'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'photo' => 'required|photo|mimes:jpeg,png,jpg,gif|max:2048',
         'name' => 'required|string|min:3|max:100',
         'email' => 'required|email',
         'phone' => 'required',
@@ -70,7 +70,7 @@ class UserController extends Controller
     public function update(Request $request, $id)
 {
     $request->validate([
-        'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        'photo' => 'nullable|photo|mimes:jpeg,png,jpg,gif|max:2048',
         'name' => 'required|string|min:3|max:100',
         'email' => 'required|email',
         'phone' => 'required',

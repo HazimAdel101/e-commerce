@@ -32,11 +32,11 @@
                     <tr>
                         <!-- Photo Column: Show a thumbnail or '----' if photo does not exist -->
                         <td>
-                            @if ($user->photo && $user->photo != 'noimage.jpg')
+                            @if ($user->photo && $user->photo != 'nophoto.jpg')
                                 <img src="{{ asset('photos/users/' . $user->photo) }}" alt="{{ $user->name }}"
                                     width="100">
                             @else
-                                <img src="{{ asset('photos/users/noimage.jpg') }}" alt="Default Image" width="100">
+                                <img src="{{ asset('photos/users/nophoto.jpg') }}" alt="Default photo" width="100">
                             @endif
                 </td>
 
