@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
 use App\Repositories\UserRepositoryInterface;
+use Illuminate\Support\Facades\Log;
 
 class ApiController extends Controller
 {
@@ -62,42 +63,48 @@ class ApiController extends Controller
     }
 
     public function login(Request $request)
-    {
-        try {
-            $validate_user = Validator::make($request->all(), [
-                'email' => 'required|email',
-                'password' => 'required|string|min:6',
-            ]);
+{
+    try {
+        $validate_user = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required|string|min:6',
+        ]);
 
-            // Return validation errors if validation fails
-            if ($validate_user->fails()) {
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Validation error',
-                    'errors' => $validate_user->errors()
-                ], 422);
-            }
-
-            if (!Auth::attempt($request->only(['email', 'password']))) {
-                return response()->json([
-                    'status' => false,
-                    'message' => 'Wrong user name or password',
-                ], 401);
-            }
-
-            $user = User::where('email', $request->email)->first();
-            return response()->json([
-                'status' => true,
-                'message' => 'User logged in successfully',
-                'token' => $user->createToken('secret Token123')->plainTextToken
-            ]);
-        } catch (\Exception $e) {
+        if ($validate_user->fails()) {
             return response()->json([
                 'status' => false,
-                'message' => $e->getMessage()
-            ], 500);
+                'message' => 'Validation error',
+                'errors' => $validate_user->errors()
+            ], 422);
         }
+
+        if (!Auth::attempt($request->only(['email', 'password']))) {
+            $user = User::where('email', $request->email)->first();
+            if (!$user) {
+                Log::warning('Login failed: User not found', ['email' => $request->email]);
+            } else {
+                Log::warning('Login failed: Incorrect password', ['email' => $request->email]);
+            }
+            return response()->json([
+                'status' => false,
+                'message' => 'Wrong user name or password',
+            ], 401);
+        }
+
+        $user = Auth::user(); // Fetch the authenticated user
+        return response()->json([
+            'status' => true,
+            'message' => 'User logged in successfully',
+            'token' => $user->createToken('secret Token123')->plainTextToken
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => false,
+            'message' => $e->getMessage()
+        ], 500);
     }
+}
+
 
     public function profile()
     {
@@ -137,5 +144,7 @@ class ApiController extends Controller
         'message' => 'No authenticated user found',
     ], 401);
 }
+
+
 
 }
